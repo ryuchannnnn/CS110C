@@ -1,0 +1,86 @@
+/*
+[dchan89@hills ~]$ ./a.out
+1. add an entry: 
+2. remove an entry: 
+3. search the dictionary for the birthday for a given name: 
+4. display the name and birthday of every entry in the dictionary: 
+5. display everyone in the dictionary who was born in a given month: 
+6. exit
+Enter an option: 
+1
+Enter name: 
+Barbara
+Enter month: 
+3
+Enter day: 
+22
+Enter year: 
+1992
+ 
+Enter an option: 
+1
+Enter name: 
+Lenox
+Enter month: 
+9
+Enter day: 
+14
+Enter year: 
+1994
+ 
+Enter an option: 
+1
+Enter name: 
+Roz
+Enter month: 
+1
+Enter day: 
+17
+Enter year: 
+1997
+ 
+Enter an option: 
+1
+Enter name: 
+Silvia
+Enter month: 
+2
+Enter day: 
+4
+Enter year: 
+1998
+ 
+Enter an option: 
+2
+Enter name to remove: 
+Roz  
+Enter month to remove: 
+1
+Enter day to remove: 
+17
+Enter year to remove: 
+1997
+ 
+Enter an option: 
+4
+Displaying all entries: 
+Barbara's birthday is on: 3 22 1992 
+Lenox's birthday is on: 9 14 1994 
+Silvia's birthday is on: 2 4 1998 
+ 
+Enter an option: 
+3
+Enter name of who you would like to find: 
+Lenox
+The name you entered has their birthday on: 
+9 14 1994
+ 
+Enter an option: 
+5
+Enter month of who you would like to find: 
+2
+Name is: Silvia
+Enter an option: 
+6
+Exiting...
+*/

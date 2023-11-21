@@ -1,0 +1,53 @@
+            // peek at the stack, if it is an operator greater or equal precedence, pop it from the stack and append it to postfixexp. keep peeking/popping until you encounter a "(" or an operator of lower precedence, or the stack becomes empty, then push the operator onto the stack
+            else
+            {
+              operator2 = a.peek(); //last out first in
+              operator1 = a.peek(); //last out first in
+              ascii2 = operator2 - '0'; // converting char (operator) to its ascii value
+              ascii1 = operator1 - '0'; // converting char (operator) to its ascii value
+              if (ascii2 >= ascii1)
+              {
+                while (a.peek() != leftP || infix[i] > operator2 || a.isEmpty())
+                {
+                  postFixExp += a.pop();
+                }
+                if (a.peek() == leftP || infix[i] < operator2 || !a.isEmpty())
+                {
+                  if (infix[i] == '-')
+                  {
+                    while (infix[i] != leftP)
+                    {
+                      answer = (operand2 - operand1) - 0;
+                      a.pop();
+                    }
+                  }
+                  else if (infix[i] == '+')
+                  {
+                    while (infix[i] != '-' || infix[i] != leftP)
+                    {
+                      answer = (operand2 + operand1) - 0;
+                      a.pop();
+                    }
+                  }
+                  else if (infix[i] == '/')
+                  {
+                    while (infix[i] != '*' || infix[i] != '+' || infix[i] != leftP)
+                    {
+                      answer = (operand2 / operand1) - 0;
+                      a.pop();
+                    }
+                  }
+                  else if (infix[i] == '*')
+                  {
+                    while (infix[i] == '+' || infix[i] == '-' || infix[i] == '*' || infix[i] == '/')
+                    {
+                      answer = (operand2 * operand1) - 0;
+                      a.pop();
+                    }
+                  }
+                }
+              }
+              a.push(infix[i]);
+
+              // input 3-2 
+              // output 328

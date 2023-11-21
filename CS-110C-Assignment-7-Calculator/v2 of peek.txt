@@ -1,0 +1,27 @@
+          // if stack is empty, push the operator onto the stack
+          if(a.isEmpty())
+          {
+         
+          }
+          else
+          // else peek at the stack, if it is an operator greater or equal precedence, pop it from the stack and append it to postfixexp. keep peeking/popping until you encounter a "(" or an operator of lower precedence, or the stack becomes empty, then push the operator onto the stack 
+          {
+            while(a.peek() != '(' || ascii1 > ascii2 || a.isEmpty())
+            {
+              operator2 = a.peek(); //last out first in
+              operator1 = a.peek(); //last out first in
+              ascii2 = operator2 - '0'; // converting char (operator) to its ascii value
+              ascii1 = operator1 - '0'; // converting char (operator) to its ascii value
+              if (ascii2 >= ascii1)
+              {
+                postFixExp +=a.pop();
+              }
+            } 
+            if(a.isEmpty())
+            {
+              a.push(infix[i]);
+            }
+          }
+
+          // input 3-2
+          // output was 320

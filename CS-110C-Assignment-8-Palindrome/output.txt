@@ -1,0 +1,18 @@
+Enter a word: 
+mother
+mother is not a palindrome.
+
+
+Enter a word: 
+racecar
+racecar is a palindrome.
+
+
+Enter a word: 
+tacocat
+tacocat is a palindrome.
+
+
+Enter a word: 
+flower
+flower is not a palindrome.

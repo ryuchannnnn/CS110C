@@ -1,0 +1,34 @@
+if(infix[i] == '-')
+{
+  while(infix[i] != '(')
+  {
+    {
+      answer = (operand2 - operand1) - 0;
+      a.pop(); 
+    }
+  }
+}
+else if(infix[i] == '+')
+{
+  while(infix[i] != '-' || infix[i] != '(')
+  {
+    answer = (operand2 + operand1) - 0;
+    a.pop();
+  }
+}
+else if(infix[i] == '/')
+{
+  while(infix[i] != '*' || infix[i] != '+' || infix[i] != '(')
+  {
+    answer = (operand2/operand1) - 0;
+    a.pop();
+  }
+} 
+else if(infix[i] == '*')
+{
+  while(infix[i] == '+' || infix[i] == '-' || infix[i] == '*' || infix[i] == '/')
+  {
+    answer = (operand2 * operand1) - 0;
+    a.pop();
+  }
+}

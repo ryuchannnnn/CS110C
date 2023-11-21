@@ -1,0 +1,73 @@
+Test 1:
+
+Running Score System... 
+Enter a new score: 
+98
+98  
+Would you like to play again? 
+y
+Enter a new score: 
+94
+98 94  
+Would you like to play again? 
+y
+Enter a new score: 
+203
+203 98 94  
+Would you like to play again? 
+y
+Enter a new score: 
+76
+203 98 94 76  
+Would you like to play again? 
+y
+Enter a new score: 
+32
+203 98 94 76 32  
+Would you like to play again? 
+y
+Enter a new score: 
+54
+203 98 94 76 54 32  
+Would you like to play again? 
+y
+Enter a new score: 
+-4
+
+
+
+
+Test 2: 
+
+Running Score System... 
+Enter a new score: 
+43
+43  
+Would you like to play again? 
+y 
+Enter a new score: 
+43
+43 43  
+Would you like to play again? 
+y
+Enter a new score: 
+45
+45 43 43  
+Would you like to play again? 
+y
+Enter a new score: 
+47
+47 45 43 43  
+Would you like to play again? 
+y
+Enter a new score: 
+21
+47 45 43 43 21  
+Would you like to play again? 
+y
+Enter a new score: 
+91 
+91 47 45 43 43 21  
+Would you like to play again? 
+n
+
